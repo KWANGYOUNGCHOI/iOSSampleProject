@@ -16,6 +16,7 @@
 		8B07878F24F10483005C383B /* iOSSampleProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B07878E24F10483005C383B /* iOSSampleProjectTests.swift */; };
 		8B07879A24F10483005C383B /* iOSSampleProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B07879924F10483005C383B /* iOSSampleProjectUITests.swift */; };
 		8B0787AB24F23384005C383B /* LayoutConstraintUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0787AA24F23384005C383B /* LayoutConstraintUtil.swift */; };
+		8B0787AE24F24B27005C383B /* miyeon1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8B0787AD24F24B27005C383B /* miyeon1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		8B07879924F10483005C383B /* iOSSampleProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSSampleProjectUITests.swift; sourceTree = "<group>"; };
 		8B07879B24F10483005C383B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B0787AA24F23384005C383B /* LayoutConstraintUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstraintUtil.swift; sourceTree = "<group>"; };
+		8B0787AD24F24B27005C383B /* miyeon1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = miyeon1.jpg; path = ../../../../../Downloads/miyeon1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		8B07877624F10480005C383B /* iOSSampleProject */ = {
 			isa = PBXGroup;
 			children = (
+				8B0787AC24F24B0A005C383B /* resources */,
 				8B0787A924F23127005C383B /* utils */,
 				8B0787A724F230EE005C383B /* extension */,
 				8B07877724F10480005C383B /* AppDelegate.swift */,
@@ -145,6 +148,14 @@
 				8B0787AA24F23384005C383B /* LayoutConstraintUtil.swift */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		8B0787AC24F24B0A005C383B /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B0787AD24F24B27005C383B /* miyeon1.jpg */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B0787AE24F24B27005C383B /* miyeon1.jpg in Resources */,
 				8B07878424F10482005C383B /* LaunchScreen.storyboard in Resources */,
 				8B07878124F10482005C383B /* Assets.xcassets in Resources */,
 				8B07877F24F10480005C383B /* Main.storyboard in Resources */,

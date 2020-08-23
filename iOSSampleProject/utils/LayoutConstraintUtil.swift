@@ -16,6 +16,8 @@ class LayoutConstraintUtil {
         static let right = NSLayoutConstraint.Attribute.right
         static let trailing = NSLayoutConstraint.Attribute.trailing
         static let bottom = NSLayoutConstraint.Attribute.bottom
+        static let height = NSLayoutConstraint.Attribute.height
+        static let width = NSLayoutConstraint.Attribute.width
     }
     
     class Relation {
