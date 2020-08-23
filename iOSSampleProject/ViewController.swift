@@ -31,37 +31,36 @@ class ViewController: UIViewController {
         var constraints = [NSLayoutConstraint]()
 
         let constraintTop = NSLayoutConstraint(item: textView,
-            attribute: NSLayoutConstraint.Attribute.top,
-            relatedBy: NSLayoutConstraint.Relation.equal,
+            attribute: LayoutConstraintUtil.Attribute.top,
+            relatedBy: LayoutConstraintUtil.Relation.equal,
             toItem: self.view.safeAreaLayoutGuide,
-            attribute: NSLayoutConstraint.Attribute.top,
+            attribute: LayoutConstraintUtil.Attribute.top,
             multiplier: 1.0,
             constant: 10)
         constraints.append(constraintTop)
 
-        let constraintBottom = NSLayoutConstraint(item: textView,
-            attribute: NSLayoutConstraint.Attribute.bottom,
-            relatedBy: NSLayoutConstraint.Relation.equal,
+        let constraintBottom = NSLayoutConstraint(item: textView,                                                  attribute: LayoutConstraintUtil.Attribute.bottom,
+            relatedBy: LayoutConstraintUtil.Relation.equal,
             toItem: self.view.safeAreaLayoutGuide,
-            attribute: NSLayoutConstraint.Attribute.bottom,
+            attribute: LayoutConstraintUtil.Attribute.bottom,
             multiplier: 1.0,
             constant: -10)
         constraints.append(constraintBottom)
 
         let constraintLeft = NSLayoutConstraint(item: textView,
-            attribute: NSLayoutConstraint.Attribute.leading,
-            relatedBy: NSLayoutConstraint.Relation.equal,
+            attribute: LayoutConstraintUtil.Attribute.leading,
+            relatedBy: LayoutConstraintUtil.Relation.equal,
             toItem: self.view.safeAreaLayoutGuide,
-            attribute: NSLayoutConstraint.Attribute.leading,
+            attribute: LayoutConstraintUtil.Attribute.leading,
             multiplier: 1.0,
             constant: 10)
         constraints.append(constraintLeft)
 
         let constraintRight = NSLayoutConstraint(item: textView,
-            attribute: NSLayoutConstraint.Attribute.trailing,
-            relatedBy: NSLayoutConstraint.Relation.equal,
+            attribute: LayoutConstraintUtil.Attribute.trailing,
+            relatedBy: LayoutConstraintUtil.Relation.equal,
             toItem: self.view.safeAreaLayoutGuide,
-            attribute: NSLayoutConstraint.Attribute.trailing,
+            attribute: LayoutConstraintUtil.Attribute.trailing,
             multiplier: 1.0,
             constant: -10)
         constraints.append(constraintRight)

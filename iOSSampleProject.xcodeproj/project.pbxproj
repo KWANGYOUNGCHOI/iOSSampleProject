@@ -15,6 +15,7 @@
 		8B07878424F10482005C383B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B07878224F10482005C383B /* LaunchScreen.storyboard */; };
 		8B07878F24F10483005C383B /* iOSSampleProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B07878E24F10483005C383B /* iOSSampleProjectTests.swift */; };
 		8B07879A24F10483005C383B /* iOSSampleProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B07879924F10483005C383B /* iOSSampleProjectUITests.swift */; };
+		8B0787AB24F23384005C383B /* LayoutConstraintUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0787AA24F23384005C383B /* LayoutConstraintUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		8B07879524F10483005C383B /* iOSSampleProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSSampleProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B07879924F10483005C383B /* iOSSampleProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSSampleProjectUITests.swift; sourceTree = "<group>"; };
 		8B07879B24F10483005C383B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B0787AA24F23384005C383B /* LayoutConstraintUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstraintUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 		8B0787A924F23127005C383B /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				8B0787AA24F23384005C383B /* LayoutConstraintUtil.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			files = (
 				8B07877C24F10480005C383B /* ViewController.swift in Sources */,
 				8B07877824F10480005C383B /* AppDelegate.swift in Sources */,
+				8B0787AB24F23384005C383B /* LayoutConstraintUtil.swift in Sources */,
 				8B07877A24F10480005C383B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
