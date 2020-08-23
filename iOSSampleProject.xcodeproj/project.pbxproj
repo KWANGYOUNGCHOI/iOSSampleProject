@@ -99,6 +99,8 @@
 		8B07877624F10480005C383B /* iOSSampleProject */ = {
 			isa = PBXGroup;
 			children = (
+				8B0787A924F23127005C383B /* utils */,
+				8B0787A724F230EE005C383B /* extension */,
 				8B07877724F10480005C383B /* AppDelegate.swift */,
 				8B07877924F10480005C383B /* SceneDelegate.swift */,
 				8B07877B24F10480005C383B /* ViewController.swift */,
@@ -126,6 +128,20 @@
 				8B07879B24F10483005C383B /* Info.plist */,
 			);
 			path = iOSSampleProjectUITests;
+			sourceTree = "<group>";
+		};
+		8B0787A724F230EE005C383B /* extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		8B0787A924F23127005C383B /* utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
