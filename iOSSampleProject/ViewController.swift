@@ -36,92 +36,23 @@ class ViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         imageView.translatesAutoresizingMaskIntoConstraints = false
 
-        var constraints = [NSLayoutConstraint]()
+        self.view.addConstraints([
+            LayoutConstraintUtil.addTopTop(item: label, toItem: self.view.safeAreaLayoutGuide, constant: 10),
+            LayoutConstraintUtil.addLeadingLeading(item: label, toItem: self.view.safeAreaLayoutGuide, constant: 10),
+            LayoutConstraintUtil.addTrailingTrailing(item: label, toItem: self.view.safeAreaLayoutGuide, constant: -10),
+            LayoutConstraintUtil.addBottomTop(item: label, toItem: imageView, constant: -10),
+        ])
 
-        let constraintTop = NSLayoutConstraint(item: label,
-            attribute: LayoutConstraintUtil.Attribute.top,
-            relatedBy: LayoutConstraintUtil.Relation.equal,
-            toItem: self.view.safeAreaLayoutGuide,
-            attribute: LayoutConstraintUtil.Attribute.top,
-            multiplier: 1.0,
-            constant: 10)
-        constraints.append(constraintTop)
-
-        let constraintBottom = NSLayoutConstraint(item: label,                                                  attribute: LayoutConstraintUtil.Attribute.bottom,
-            relatedBy: LayoutConstraintUtil.Relation.equal,
-            toItem: imageView,
-            attribute: LayoutConstraintUtil.Attribute.top,
-            multiplier: 1.0,
-            constant: 0)
-        constraints.append(constraintBottom)
-
-        let constraintLeft = NSLayoutConstraint(item: label,
-            attribute: LayoutConstraintUtil.Attribute.leading,
-            relatedBy: LayoutConstraintUtil.Relation.equal,
-            toItem: self.view.safeAreaLayoutGuide,
-            attribute: LayoutConstraintUtil.Attribute.leading,
-            multiplier: 1.0,
-            constant: 10)
-        constraints.append(constraintLeft)
-
-        let constraintRight = NSLayoutConstraint(item: label,
-            attribute: LayoutConstraintUtil.Attribute.trailing,
-            relatedBy: LayoutConstraintUtil.Relation.equal,
-            toItem: self.view.safeAreaLayoutGuide,
-            attribute: LayoutConstraintUtil.Attribute.trailing,
-            multiplier: 1.0,
-            constant: -10)
-        constraints.append(constraintRight)
+        self.view.addConstraints([
+            LayoutConstraintUtil.addTopBottom(item: imageView, toItem: label, constant: 0),
+            LayoutConstraintUtil.addLeadingLeading(item: imageView, toItem: self.view.safeAreaLayoutGuide, constant: 10),
+            LayoutConstraintUtil.addTrailingTrailing(item: imageView, toItem: self.view.safeAreaLayoutGuide, constant: -10),
+            LayoutConstraintUtil.addBottomBottom(item: imageView, toItem: self.view.safeAreaLayoutGuide, constant: -10)
+        ])
         
-        let constraintHeight = NSLayoutConstraint(item: label,
-            attribute: LayoutConstraintUtil.Attribute.height,
-            relatedBy: LayoutConstraintUtil.Relation.equal,
-            toItem: label,
-            attribute: LayoutConstraintUtil.Attribute.height,
-            multiplier: 1.0,
-            constant: 200)
-        constraints.append(constraintHeight)
-
-        self.view.addConstraints(constraints)
-
-        var imageConstraints = [NSLayoutConstraint]()
-
-        let imageConstraintTop = NSLayoutConstraint(item: imageView,
-            attribute: LayoutConstraintUtil.Attribute.top,
-            relatedBy: LayoutConstraintUtil.Relation.equal,
-            toItem: label,
-            attribute: LayoutConstraintUtil.Attribute.bottom,
-            multiplier: 1.0,
-            constant: 0)
-        imageConstraints.append(imageConstraintTop)
-
-        let imageConstraintBottom = NSLayoutConstraint(item: imageView,                                                  attribute: LayoutConstraintUtil.Attribute.bottom,
-            relatedBy: LayoutConstraintUtil.Relation.equal,
-            toItem: self.view.safeAreaLayoutGuide,
-            attribute: LayoutConstraintUtil.Attribute.bottom,
-            multiplier: 1.0,
-            constant: -10)
-        imageConstraints.append(imageConstraintBottom)
-
-        let imageConstraintLeft = NSLayoutConstraint(item: imageView,
-            attribute: LayoutConstraintUtil.Attribute.leading,
-            relatedBy: LayoutConstraintUtil.Relation.equal,
-            toItem: self.view.safeAreaLayoutGuide,
-            attribute: LayoutConstraintUtil.Attribute.leading,
-            multiplier: 1.0,
-            constant: 10)
-        imageConstraints.append(imageConstraintLeft)
-
-        let imageConstraintRight = NSLayoutConstraint(item: imageView,
-            attribute: LayoutConstraintUtil.Attribute.trailing,
-            relatedBy: LayoutConstraintUtil.Relation.equal,
-            toItem: self.view.safeAreaLayoutGuide,
-            attribute: LayoutConstraintUtil.Attribute.trailing,
-            multiplier: 1.0,
-            constant: -10)
-        imageConstraints.append(imageConstraintRight)
-
-        self.view.addConstraints(imageConstraints)
+        self.view.addConstraints([
+            LayoutConstraintUtil.addSameHeight(item: label, toItem: imageView)
+        ])
     }
 
 }
